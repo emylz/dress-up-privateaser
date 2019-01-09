@@ -1,0 +1,78 @@
+body{font-family: "Lato", sans-serif;}
+body, html, bar, booker  {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.name, .time, .persons, .option, .price-by-hour, .price-by-person {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#compute{
+  display: block;
+  background-color: #3498DB;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  border: none;
+  font-weight: 700;
+  padding: 0 34px;
+  margin: 0 auto;
+}
+
+.option {
+  display: block;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.option input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.option {
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.option:hover input ~ .option {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.option input:checked ~ .option {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.option:after {
+  content: "";
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.option input:checked ~ .option:after {
+  display: block;
+}
