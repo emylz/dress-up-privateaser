@@ -9,7 +9,7 @@ body, html, bar, booker  {
   background-color: #3498DB;
 }
 
-.name, .time, .persons, .option, .price-by-hour, .price-by-person {
+.name, .time, .persons, .option, .price-by-hour, .price-by-person, #actors {
   width: auto;
   padding: 12px 20px;
   margin: 8px 105px;
