@@ -1,25 +1,45 @@
-body{font-family: "Lato", sans-serif;}
-body, html, bar, booker  {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
+body{font-family: "Raleway", sans-serif; margin: 0; width: 100%}
+body, html {
+height: 100%;
+width: 100%;
 }
 
 #bar, #booker{
-  background-color: #3498DB;
+  background-color: white;
+  margin-left: 25%;
+  margin-right: 50%;
+  box-shadow:  5px 5px 1px Gainsboro;
 }
 
-.name, .time, .persons, .option, .price-by-hour, .price-by-person, #actors {
+body {
+  background-image: url('./image/privateaser.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.name, .time, .persons, .option, .price-by-hour, .price-by-person {
+  position: relative;
   width: auto;
-  padding: 12px 20px;
-  margin: 8px 105px;
-  box-sizing: border-box;
-  border: 3px solid #3498DB;
+  margin: 1% 8% 10% 2%;
+  padding: 12px 15px;
+  border: 2px solid #00cccc;
+}
+
+#actors
+{
+  background-color: white;
+  padding: 0px 35px;
+  margin-right: 75%;
+  box-shadow:  5px 5px 1px Gainsboro;
+  position: fixed;
+  left: 78%;
+  top: 20%;
 }
 
 #compute{
   display: block;
-  background-color: #3498DB;
+  background-color: #00cccc;
   height: 40px;
   border-radius: 20px;
   line-height: 36px;
